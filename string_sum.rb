@@ -54,4 +54,9 @@ class StringSumTest < Minitest::Test
   def test_addition_with_delimiters
     assert_equal 14, StringSum.add("//;\n6;8")
   end
+
+  # Test for negative values.
+  def test_addition_with_negative_number_raises_exception
+    assert_raises(RuntimeError) { StringSum.add("5,-9") }
+  end
 end
