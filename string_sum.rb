@@ -59,4 +59,10 @@ class StringSumTest < Minitest::Test
   def test_addition_with_negative_number_raises_exception
     assert_raises(RuntimeError) { StringSum.add("5,-9") }
   end
+
+  # test for negative values with multiple numbers.
+  def test_addition_with_multiple_negative_numbers_raises_exception_and_shows_message
+    exception = assert_raises(RuntimeError) { StringSum.add("5,6,7,88,9,-7,-8") }
+    assert_match /negative values not allowed: -7, -8/, exception.message
+  end
 end
