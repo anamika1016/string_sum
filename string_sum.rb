@@ -18,3 +18,5 @@ puts StringSum.add("5") #=> 5
 puts StringSum.add("1,5") #=> 6
 puts StringSum.add("1,5,3") #=> 9
 puts StringSum.add("1\n2,3") # => 6
+puts StringSum.add("10,20,30") # => 60
+puts StringSum.add("//;\n1;2;3")
