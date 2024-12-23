@@ -12,3 +12,5 @@ class StringSum
     numbers.sum(&:to_i)
   end
 end
+
+puts StringSum.add("") # => 0
