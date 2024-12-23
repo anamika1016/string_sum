@@ -14,3 +14,5 @@ class StringSum
 end
 
 puts StringSum.add("") # => 0
+puts StringSum.add("5") #=> 5
+puts StringSum.add("1,5") #=> 6
