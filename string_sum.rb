@@ -1,3 +1,4 @@
+require 'minitest/autorun'
 class StringSum
   def self.add(data)
     return 0 if data.empty?
@@ -20,5 +21,9 @@ puts StringSum.add("1,5,3") #=> 9
 puts StringSum.add("1\n2,3") # => 6
 puts StringSum.add("10,20,30") # => 60
 puts StringSum.add("//;\n1;2;3") # =>6
-puts StringSum.add("1,-2,-3") # => "negative values not allowed: -2, -3"
-puts StringSum.add("//,\n1,-2,-3") # => "negative values not allowed: -2, -3"
+# puts StringSum.add("1,-2,-3") # => "negative values not allowed: -2, -3"
+# puts StringSum.add("//,\n1,-2,-3") # => "negative values not allowed: -2, -3"
+
+class StringSumTest < Minitest::Test
+  
+end
