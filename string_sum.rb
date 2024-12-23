@@ -25,5 +25,8 @@ puts StringSum.add("//;\n1;2;3") # =>6
 # puts StringSum.add("//,\n1,-2,-3") # => "negative values not allowed: -2, -3"
 
 class StringSumTest < Minitest::Test
-  
+  # Test for adding with an empty string.
+  def test_addition_with_empty_string
+    assert_equal 0, StringSum.add("")
+  end
 end
