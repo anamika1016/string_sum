@@ -39,4 +39,9 @@ class StringSumTest < Minitest::Test
   def test_addition_with_two_numbers
     assert_equal 6, StringSum.add("2,4")
   end
+
+  # Test for adding with a mix of comma and newline separated numbers.
+  def test_addition_with_mixed_separators
+    assert_equal 23, StringSum.add("5,7\n3,8")
+  end
 end
