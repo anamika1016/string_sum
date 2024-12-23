@@ -29,4 +29,9 @@ class StringSumTest < Minitest::Test
   def test_addition_with_empty_string
     assert_equal 0, StringSum.add("")
   end
+
+  # Test for adding with a single digit number.
+  def test_addition_with_one_number
+    assert_equal 2, StringSum.add("2")
+  end
 end
