@@ -49,4 +49,9 @@ class StringSumTest < Minitest::Test
   def test_addition_with_multiple_numbers
     assert_equal 30, StringSum.add("4,5,6,7,8")
   end
+
+  # Test for adding with delimiter
+  def test_addition_with_delimiters
+    assert_equal 14, StringSum.add("//;\n6;8")
+  end
 end
