@@ -44,4 +44,9 @@ class StringSumTest < Minitest::Test
   def test_addition_with_mixed_separators
     assert_equal 23, StringSum.add("5,7\n3,8")
   end
+
+  # Test for adding with multiple numbers.
+  def test_addition_with_multiple_numbers
+    assert_equal 30, StringSum.add("4,5,6,7,8")
+  end
 end
